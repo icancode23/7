@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" package="com.AttendanceSimplified.vaibhav.dtustudentapp" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:theme="@style/AppTheme" android:label="Student App" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="Student App" android:name="com.AttendanceSimplified.vaibhav.dtustudentapp.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_front" android:name="com.AttendanceSimplified.vaibhav.dtustudentapp.front" />
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_show_attendance2" android:name="com.AttendanceSimplified.vaibhav.dtustudentapp.show_attendance2" />
+        <activity android:name="com.AttendanceSimplified.vaibhav.dtustudentapp.discovery" />
+        <activity android:name="com.AttendanceSimplified.vaibhav.dtustudentapp.btdiscovery" />
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_update_password" android:name="com.AttendanceSimplified.vaibhav.dtustudentapp.UpdatePassword" />
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1" />
+    </application>
+</manifest>
